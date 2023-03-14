@@ -3457,7 +3457,7 @@ path {
 .adv__content-price svg {
     display: inline-block;
     margin-left: -2px;
-    margin-bottom: -1px;
+    margin-bottom: -2px;
     width: 24px;
     height: 24px;
     fill: var(--color-text_white);
