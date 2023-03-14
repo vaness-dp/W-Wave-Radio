@@ -1202,6 +1202,17 @@
 		margin-top: 55px;
 	}
 
+    .graph-modal__form .js-validate-error-label {
+        top: 2px;
+        left: 22px;
+        font-size: 8px;
+    }
+
+    .graph-modal__form .js-validate-error-label:nth-child(2) {
+        top: 62px;
+        left: 20px;
+    }
+
 	.graph-modal__close {
 		right: 22px;
 		top: 20px;
@@ -1823,6 +1834,11 @@
 		padding-top: 55px;
 		padding-bottom: 55px;
 	}
+
+    .adv__content-price svg {
+        width: 20px;
+        height: 20px;
+    }
 
 	.adv__wrapper {
 		margin-bottom: 20px;

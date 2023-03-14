@@ -376,9 +376,30 @@ body {
 	transition: stroke 0.4s ease-in-out;
 }
 
-.header__search-btn:hover svg path {
-	stroke: var(--color-primary_light);
-	-webkit-transition: stroke 0.4s ease-in-out;
+/*.header__search-btn:hover svg path {*/
+/*	stroke: var(--color-primary_light);*/
+/*	-webkit-transition: stroke 0.4s ease-in-out;*/
+/*	-o-transition: stroke 0.4s ease-in-out;*/
+/*	transition: stroke 0.4s ease-in-out;*/
+/*}*/
+
+.header__search:hover svg path {
+    stroke: var(--color-primary_light);
+    -webkit-transition: stroke 0.4s ease-in-out;
+	-o-transition: stroke 0.4s ease-in-out;
+	transition: stroke 0.4s ease-in-out;
+}
+
+.header__search:focus-visible svg path {
+    stroke: var(--color-primary_light);
+    -webkit-transition: stroke 0.4s ease-in-out;
+	-o-transition: stroke 0.4s ease-in-out;
+	transition: stroke 0.4s ease-in-out;
+}
+
+.header__search:active svg path {
+    stroke: var(--color-primary_shade);
+    -webkit-transition: stroke 0.4s ease-in-out;
 	-o-transition: stroke 0.4s ease-in-out;
 	transition: stroke 0.4s ease-in-out;
 }
@@ -634,6 +655,7 @@ body {
 }
 
 .graph-modal__form {
+    position: relative;
 	-webkit-box-orient: vertical;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
@@ -641,6 +663,11 @@ body {
 	-webkit-box-align: start;
 	-ms-flex-align: start;
 	align-items: flex-start;
+}
+
+.graph-modal__form .js-validate-error-label:nth-child(2) {
+    position: absolute;
+    top: 109px;
 }
 
 .graph-modal__input {
@@ -3427,6 +3454,15 @@ path {
 	color: var(--color-text_white);
 }
 
+.adv__content-price svg {
+    display: inline-block;
+    margin-left: -2px;
+    margin-bottom: -1px;
+    width: 24px;
+    height: 24px;
+    fill: var(--color-text_white);
+}
+
 .adv__content-btn {
 	padding: 22px 11px;
 	border: 2px solid var(--color-promo);
@@ -3941,7 +3977,7 @@ path {
 	height: 15px;
 	background-image: url('../img/checked.svg');
 	background-repeat: no-repeat;
-	background-position: 32% 32%;
+	background-position: 29% 29%;
 	opacity: 0;
 	-webkit-transition-property: opacity, border-color;
 	-o-transition-property: opacity, border-color;
@@ -4163,7 +4199,7 @@ path {
 	padding-bottom: 8px;
 	text-align: center;
 	background-image: url('../img/footer_waveline.png');
-	background-repeat: no-repeat;
+	background-repeat: repeat-x;
 	background-position: top;
 }
 

@@ -191,3 +191,32 @@ window.addEventListener('DOMContentLoaded', function () {
 		},
 	})
 })
+
+new JustValidate('.graph-modal__form', {
+    colorWrong: '#d52b1e',
+
+    rules: {
+        login: {
+            required: true,
+            minLength: 2,
+            maxLength: 35,
+        },
+        password: {
+            required: true,
+            minLength: 2,
+            maxLength: 35,
+        },
+    },
+    messages: {
+        login: {
+            required: 'Ошибка',
+            minLength: 'Ошибка',
+            maxLength: 'Ошибка',
+        },
+        password: {
+            required: 'Ошибка',
+            minLength: 'Ошибка',
+            maxLength: 'Ошибка',
+        },
+    },
+})
