@@ -827,82 +827,52 @@ body {
 	transition-timing-function: ease-in-out;
 }
 
+.graph-modal__link rect {
+    -webkit-transition-property: fill;
+    -o-transition-property: fill;
+    transition-property: fill;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.graph-modal__link path {
+    -webkit-transition-property: fill;
+    -o-transition-property: fill;
+    transition-property: fill;
+    -webkit-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
 .graph-modal__link-fb:hover svg path {
 	fill: var(--color-text_primary);
-	-webkit-transition-property: fill;
-	-o-transition-property: fill;
-	transition-property: fill;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	-webkit-transition-timing-function: ease-in-out;
-	-o-transition-timing-function: ease-in-out;
-	transition-timing-function: ease-in-out;
 }
 
 .graph-modal__link-fb:focus-visible svg path {
 	fill: var(--color-primary_light);
-	-webkit-transition-property: fill;
-	-o-transition-property: fill;
-	transition-property: fill;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	-webkit-transition-timing-function: ease-in-out;
-	-o-transition-timing-function: ease-in-out;
-	transition-timing-function: ease-in-out;
 }
 
 .graph-modal__link-fb:active svg path {
 	fill: var(--color-primary_shade);
-	-webkit-transition-property: fill;
-	-o-transition-property: fill;
-	transition-property: fill;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	-webkit-transition-timing-function: ease-in-out;
-	-o-transition-timing-function: ease-in-out;
-	transition-timing-function: ease-in-out;
 }
 
 .graph-modal__link:hover svg rect {
 	fill: var(--color-text_primary);
-	-webkit-transition-property: fill;
-	-o-transition-property: fill;
-	transition-property: fill;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	-webkit-transition-timing-function: ease-in-out;
-	-o-transition-timing-function: ease-in-out;
-	transition-timing-function: ease-in-out;
 }
 
 .graph-modal__link:focus-visible svg rect {
 	fill: var(--color-primary_light);
-	-webkit-transition-property: fill;
-	-o-transition-property: fill;
-	transition-property: fill;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	-webkit-transition-timing-function: ease-in-out;
-	-o-transition-timing-function: ease-in-out;
-	transition-timing-function: ease-in-out;
 }
 
 .graph-modal__link:active svg rect {
 	fill: var(--color-primary_shade);
-	-webkit-transition-property: fill;
-	-o-transition-property: fill;
-	transition-property: fill;
-	-webkit-transition-duration: 0.4s;
-	-o-transition-duration: 0.4s;
-	transition-duration: 0.4s;
-	-webkit-transition-timing-function: ease-in-out;
-	-o-transition-timing-function: ease-in-out;
-	transition-timing-function: ease-in-out;
 }
 
 .graph-modal__text span {
@@ -1402,6 +1372,8 @@ body {
 }
 
 .card-content {
+    display: flex;
+    flex-direction: column;
 	width: 100%;
 	max-width: 428px;
 }
@@ -1414,7 +1386,6 @@ body {
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	padding-right: 30px;
-	border-bottom: 1px solid var(--color-bg_selection);
 }
 
 .card-content__text {
@@ -1579,7 +1550,9 @@ body {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	padding: 9px 0 0 32px;
+    margin-top: auto;
+	padding: 9px 0 4px 32px;
+    border-top: 1px solid var(--color-bg_selection);
 }
 
 .descr-stat__info {
